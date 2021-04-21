@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title class="title">YuuhuMeds</title>
+	<link href="img/logo.jpg" rel="icon">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="box-buttom">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<form id="login" class="input-grup">
+				<h2 class="l-text"> Sign In</h2>
+				<input type="Email" class="input-field" placeholder="Masukkan Email Anda">
+				<input type="Password" class="input-field" placeholder="Masukkan Password">
+				<div class="field">
+					<button type="submit" class="submit-btn"><a href="index.html">Login</a></button>
+				</div>
+				<div>
+					<small class="small">Belum Memiliki Akun?<a href="#"onclick="register()">Daftar</a></small>	
+				</div>
+			</form>
+			<form id="register" class="input-grup-regis">
+				<h2 class="regis-teks"> Registrasi</h2>
+				<input type="text" class="input-field" placeholder="Nama Depan">
+				<input type="text" class="input-field" placeholder="Nama Belakang">
+				<input type="Email" class="input-field" placeholder="Masukkan Email Anda">
+				<input type="Password" class="input-field" placeholder="Masukkan Password">
+				<div class="field">
+					<button type="submit" class="submit-btn"><a href="index.html">Daftar</a></button>
+				</div>
+				<small class="small">Sudah Memiliki Akun?<a href="#" onclick="login()">Login</a></small>
+			</form>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register(){
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+		function login(){
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0px";
+		}
+
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+</body>
+</html>

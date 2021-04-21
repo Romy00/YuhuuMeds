@@ -1,0 +1,261 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.form-box-index{
+	height: 55px;
+	position: relative;
+	margin: auto;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 5px 2px #dbdbdbdb;
+}
+.box-buttom-index{
+	top: 0;
+	left: 350px;
+	width: 220px;
+	margin: 10px auto;
+	position: relative;
+	border-radius: 30px;
+}
+.toggle-btn-index{
+	padding: 10px 30px;
+	cursor: pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+	font-family:Geometr415 Blk BT; 
+}
+h1{
+	margin-left: 600px;
+	padding: 10px 30px;
+	cursor: pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+	font-family:Geometr415 Blk BT;  
+	color: #025659;
+
+}
+.hero{
+	height: 100%;
+	width: 100%;
+	background:linear-gradient(to bottom, #025659,#07A1A6,#0FF2FA);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.form-box{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 5px 2px #dbdbdbdb;
+}
+.box-buttom{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow:0 0 5px 2px #41ffff;
+	border-radius: 30px;
+}
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+	font-family:Geometr415 Blk BT; 
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background:linear-gradient(to right, #00ffff, #61ffff);
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-grup{
+	top: 160px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.input-grup-regis{
+	top: 110px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background:transparent;
+	font-family: Geometr415 Blk BT;
+}
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background:linear-gradient(to right, #00ffff, #61ffff);
+	border:0;
+	outline: none;
+	border-radius: 30px;
+	font-family:Geometr415 Blk BT;
+	height: 100%;
+	width: 100%;
+}
+.check-box{
+	margin: 30px 10px 30px 0;
+}
+.field button a{
+	color: #ffffff;
+	font-size: 20px;
+}
+span{
+	color: #777;
+	font-size: 12px;
+	bottom: 83px;
+	position: absolute;
+}
+#login{
+	left:50px;
+	top: 110px;
+}
+
+#register{
+	left: 450px;
+	top: 105px;
+}
+.field{
+	position: relative;
+	height: 45px;
+	width: 100%;
+	display: flex;
+}
+.field input{
+	background-color:#41ffff;
+	height: 100%;
+	width: 100%;
+	font-family: Geometr415 Blk BT;
+}
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: #d41872;
+  background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+  background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
+  background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
+  background: linear-gradient(left, #a445b2, #d41872, #fa4299);
+}
+
+.focus-input100::after {
+  font-family: Linearicons-Free;
+  font-size: 18px;
+  color: #999999;
+
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: 35px;
+ 
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input100:focus {
+  padding-left: 60px;
+}
+
+.input100:focus + .focus-input100::after {
+  left: 23px;
+  color: #d41872;
+}
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 + .focus-input100::after {
+  left: 23px;
+  color: #d41872;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 {
+  padding-left: 60px;
+}
+
+h2.l-text {
+	font-family: Geometr415 Blk BT;
+	font-size: 24px;
+	position: center;
+	width: 85%;
+	padding: 10px 100px;
+	color:#41ffff;
+}
+h2.regis-teks {
+	font-family: Geometr415 Blk BT;
+	font-size: 24px;
+	position: center;
+	width: 85%;
+	padding: 10px 100px;
+	color:#41ffff;
+	text-shadow: 1 2 5px 2px #034F52
+}
+small{
+	font-family: Geometr415 Blk BT;
+	font-size: 12px;
+	padding:60px ;
+
+}
+small a{
+	color: #000000;
+}
